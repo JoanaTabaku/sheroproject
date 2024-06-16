@@ -1,0 +1,461 @@
+body {
+    font-family: system-ui, sans-serif
+}
+
+/* ----Reusable styles----  */
+.m-0 {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.col {
+    padding: 15px 0px;
+    width: 100%;
+}
+
+.col-95 {
+    width: 95%;
+    padding: 15px 0px;
+    margin: auto;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* General button style  */
+.btn {
+    font-size: 16px;
+    padding: 13px 17px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background-color: rgb(32, 101, 179);
+    color: white;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: rgb(32, 101, 179);
+}
+
+/* ----Desktop styles----  */
+
+/* Navbar styles */
+
+.navBar {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #c3d2eb;
+    margin: 25px 5px;
+}
+
+.navBar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navBar ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Homepage styles  */
+
+/* Start First Section styles  */
+.mainImages {
+    display: grid;
+    grid-template-areas:
+        'mainImg mainImg rightImg-1 rightImg-1'
+        'mainImg mainImg rightImg-1 rightImg-1'
+        'mainImg mainImg rightImg-2 rightImg-2'
+        'mainImg mainImg rightImg-2 rightImg-2'
+    ;
+    gap: 7px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.mainImages > div {
+    position: relative;
+}
+
+.mainImages .mainImg {
+    grid-area: mainImg;
+}
+
+.mainImages .mainImg .content {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.mainImages .mainImg .content h2,
+.mainImages .mainImg .content p {
+    color: rgb(65, 63, 63);
+    font-weight: 600;
+}
+
+.mainImages .mainImg .content div h1 {
+    color: white
+}
+
+.mainImages .mainImg .content h2:first-child {
+    white-space: pre;
+}
+
+.mainImages .rightImg-1 {
+    grid-area: rightImg-1;
+}
+
+.mainImages .rightImg-1 .content {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    width: fit-content;
+    color: white;
+}
+
+.mainImages .rightImg-1 .content p.icon {
+    width: 50%;
+}
+
+.mainImages .rightImg-1 .content p.icon .bolt path {
+    fill: white
+}
+
+.mainImages .rightImg-1 .btn {
+    color: rgb(116, 36, 36);
+    margin-right: 16px;
+}
+
+.mainImages .rightImg-1 .content h3:first-of-type  {
+    width: 50%;
+}
+
+.mainImages .rightImg-1 .content h3:last-of-type {
+    width: 65%;
+}
+
+.mainImages .rightImg-2 {
+    grid-area: rightImg-2;
+}
+
+.mainImages .rightImg-2 .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mainImages .rightImg-2 .content .title-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 4px solid skyblue;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    min-width: 300px;
+    color: rgb(32, 101, 179)
+}
+
+.mainImages .rightImg-2 .content .title-container h2 {
+    width: 85%;
+    margin: 6px;
+}
+/* End First Section styles  */
+
+/* Start Second Section styles  */
+.products {
+    display: flex;
+    justify-content: space-around;
+}
+
+.products .variant1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.products h2 {
+    color: rgb(64, 96, 133)
+}
+
+.products .variant1 button {
+    margin-top: 10px;
+}
+
+.products .variant2 {
+    display: none;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.products .variant2 .img {
+    max-height: 190px;
+    max-width: 160px;
+}
+
+.products .variant2 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products .variant2 .content a {
+    text-decoration: none;
+    color: rgb(32, 101, 179);
+    font-weight: bold;
+}
+
+
+/* End Second Section styles  */
+
+/* Homepage carousel styles  */
+.glide__track>ul>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glide__arrow--right {
+    right: 1em !important;
+    background: black !important;
+    border: 1px solid !important;
+    border-radius: 5px !important;
+}
+
+.glide__arrow--left {
+    left: 1em !important;
+    background: black !important;
+    border: 1px solid !important;
+    border-radius: 5px !important;
+}
+
+
+/* Footer styles  */
+footer {
+    background-color: rgb(102, 171, 211);
+    padding: 50px 0;
+}
+
+footer .logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 200px;
+}
+
+footer .part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+footer .part1 .title {
+    color: rgb(243, 241, 241);
+    font-size: 20px;
+    margin: 0 20%;
+    text-align: center;
+}
+
+footer .part2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .part2 .footer-content-col .title {
+    color: white;
+}
+
+footer .part2 .footer-content-col ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .part2 .footer-content-col ul li a {
+    color: rgb(243, 241, 241);
+    text-decoration: none;
+}
+
+footer .part2 .footer-content-col .contact {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+footer .part2 .footer-content-col .contact .icon svg {
+    width: 14px;
+    height: 14px;
+    fill: white;
+}
+
+footer .part2 .footer-content-col .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .part2 .footer-content-col .social .icon svg, footer .part2 .footer-content-col .social .icon svg path {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+/* End Footer styles */
+
+@media only screen and (max-width: 1420px) {
+    .products {
+        flex-wrap: wrap;
+    }
+}
+
+/* ----Tablet styles (less than 961px) ---- */
+@media only screen and (max-width: 961px) {
+
+    /* Adjustments for tablet view */
+    .container {
+        width: 100%;
+    }
+
+    .navBar {
+        padding: 10px 0;
+        text-align: center;
+        background-color: #c3d2eb;
+        margin: 10px 5px;
+    }
+
+    .mainImages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainImages .img {
+        max-height: 350px;
+    }
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+
+    .navBar ul li {
+        font-size: 14px;
+    }
+
+    .rightImg-1 .content {
+        width: 100%;
+    }
+
+    footer .part1 .title {
+        margin: 0;
+    }
+
+    footer .part2 {
+        flex-direction: column;
+    }
+}
+
+/* ----Mobile styles (less than 768px) ---- */
+@media only screen and (max-width: 767px) {
+    .navBar {
+        margin: 10px 0;
+    }
+
+    .products {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .products .variant1 {
+        display: none;
+    }
+    .products .variant2 {
+        display: flex;
+    }
+}
+
+/* ----Mobile styles (less than 480px) ---- */
+@media only screen and (max-width: 480px) {
+    .mainImages .rightImg-2 .content .title-container {
+        min-width: 180px;
+    }
+    .mainImages .rightImg-1 .btn {
+        margin-right: 0;
+    }
+    .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    .content h1 {
+        font-size: 18px;
+    }
+
+    .content h2 {
+        font-size: 16px;
+    }
+
+    .content h3 {
+        font-size: 14px;
+    }
+}
+
+/* ----Mobile styles (less than 420px) ---- */
+@media only screen and (max-width: 420px) {
+    .content h1 {
+        font-size: 14px;
+    }
+
+    .content h2 {
+        font-size: 13px;
+    }
+
+    .content h3 {
+        font-size: 12px;
+    }
+}
